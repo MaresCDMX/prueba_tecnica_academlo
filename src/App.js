@@ -8,10 +8,8 @@ import Login from "./Components/Login";
 const App = () => {
   const [todoList, setTodoLists] = useState([]);
 
-  
-
   return (
-    <div className="App">
+    <div>
       <Login />
     </div>
   );
