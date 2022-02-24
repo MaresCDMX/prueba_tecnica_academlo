@@ -20,7 +20,7 @@
 
 .font-face-form {
   font-family: "HelveticaNeueCyr-Bold";
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .align-right {
@@ -39,6 +39,12 @@ input {
 textarea {
   padding: 8px 8px 8px 8px;
   margin: 10px;
+}
+
+.button-cancel {
+  background-color: #d3d3d3;
+  color: #000000;
+  padding: 5px;
 }
 
 button {
@@ -97,6 +103,10 @@ button:focus {
   margin-top: 8px;
 }
 
+.margin-left {
+  margin-left: 10px;
+}
+
 .margin-right {
   margin-right: 20px;
 }
@@ -113,6 +123,10 @@ button:focus {
   margin-top: 50%;
 }
 
+.margin-top-40 {
+  margin-top: 40%;
+}
+
 .margin-top-middle {
   margin-top: 30%;
 }
@@ -126,7 +140,7 @@ button:focus {
   background-image: url("./Assets/Icons/search\ 1.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
-  background-position: 10px 0.4rem;
+  background-position: 10px 0.6rem;
 }
 
 .plus-field {
@@ -134,7 +148,7 @@ button:focus {
   background-image: url("./Assets/Icons/plus\ 1.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
-  background-position: 10px 0.3rem;
+  background-position: 10px 0.4rem;
 }
 
 .close-field {
@@ -142,6 +156,12 @@ button:focus {
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 0px 0.1rem;
+}
+
+.login-field {
+  background-image: url("./Assets/Icons/Component\ 1.svg");
+  background-repeat: no-repeat;
+  background-position: 160px 0.5rem;
 }
 
 #contenedor-card {
@@ -162,6 +182,14 @@ button:focus {
   width: 85%;
 }
 
+.button-width {
+  width: 95%;
+}
+
+.border-radius {
+  border-radius: 6px;
+}
+
 .father {
   height: 8px;
 }
@@ -172,7 +200,8 @@ button:focus {
 }
 
 .father-form {
-  height: 150px;
+  height: 0px;
+  width: 100%;
   /*IMPORTANTE*/
   display: flex;
   justify-content: center;
@@ -181,7 +210,7 @@ button:focus {
 
 .son-form {
   /* IMPORTANTE */
-  width: 120px;
+  width: 50%;
 }
 
 .gallery {
@@ -208,5 +237,12 @@ button:focus {
   width: 230px;
   padding: 30px 30px 30px 30px;
   border-radius: 15px;
-  box-shadow: 6px 10px 5px 0px rgba(228, 227, 228, 0.75);
+  box-shadow: 6px 5px 5px 5px rgba(228, 227, 228, 0.75);
+}
+
+.sprite1 {
+  background: url("./Assets/images/Vector4.svg");
+  background-size: 190px 190px;
+  background-repeat: no-repeat;
+  background-position: 0px 0.4rem;
 }

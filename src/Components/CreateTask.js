@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 
 const CreateTask = ({ handleCreateTask }) => {
-  const [state, setState] = useState("");
+  const [task, setTask] = useState("");
+  const [description, setDescription] = useState("");
+  const [find, setFind] = useState("");
   const [show, setShow] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChangeTask = (e) => {
     const value = e.target.value;
     console.log(value);
-    setState(value);
+    setTask(value);
+  };
+
+  const handleChangeDescription = (e) => {
+    const value = e.target.value;
+    console.log(value);
+    setDescription(value);
+  };
+
+  const handleChangeFind = (e) => {
+    const value = e.target.value;
+    console.log(value);
+    setFind(value);
   };
 
   const handleModalClose = (e) => {
@@ -37,22 +51,24 @@ const CreateTask = ({ handleCreateTask }) => {
             </div>
 
             <div id="contenedor">
-              <div className="font-face-body ">
+              <div className="font-face-subtitulo ">
                 <label>Agregar Tarea</label>
               </div>
 
               <div id="contenedor">
-                <div className="align-left father">
-                  <label className="align-right margin-right  margin-top-90 padding-top">
+                <div className=" align-left father">
+                  <label className="font-face-form align-right margin-right  margin-top-90 padding-top">
                     Nombre de la tarea
                     <input
-                      className="input-width"
-                      value={state}
+                      className="font-face-form input-width"
+                      value={task}
                       placeholder="Escribe tu correo electronico"
-                      onChange={handleChange}
+                      onChange={handleChangeTask}
                     />
                     <div className="align-right father">
-                      <label className="align-right margin-right">0/50</label>
+                      <label className="font-face-form align-right margin-right">
+                        0/50
+                      </label>
                     </div>
                   </label>
                 </div>
@@ -60,27 +76,29 @@ const CreateTask = ({ handleCreateTask }) => {
 
               <div id="contenedor" className="margin-top-90">
                 <div className="align-left father">
-                  <label className="padding-8px margin-top-90 padding-top">
+                  <label className="font-face-form padding-8px margin-top-90 padding-top">
                     Descripción
                     <textarea
-                      className="input-width"
-                      value={state}
+                      className="font-face-form input-width"
+                      value={description}
                       placeholder="Escribe tu correo electronico"
-                      onChange={handleChange}
+                      onChange={handleChangeDescription}
                     />
                     <div className="align-right father">
-                      <label className="align-right margin-right">0/150</label>
+                      <label className="font-face-form align-right margin-right">
+                        0/150
+                      </label>
                     </div>
                   </label>
                 </div>
               </div>
-              <div id="contenedor" className="margin-top-110">
+              <div id="contenedor" className="margin-top-40">
                 <div className="align-left father">
                   <button
-                    className=" modal-button son margin-top"
+                    className="modal-button button-cancel son margin-top"
                     onClick={handleModalOpen}
                   >
-                    Cancelar
+                    &nbsp; &nbsp; &nbsp; Cancelar &nbsp; &nbsp; &nbsp;
                   </button>
                 </div>
                 <div className="align-right father">
@@ -103,9 +121,9 @@ const CreateTask = ({ handleCreateTask }) => {
         <div className="font-face-body align-right father">
           <input
             className="font-face-body search-field son"
-            value={state}
+            value={find}
             placeholder="Buscar tarea"
-            onChange={handleChange}
+            onChange={handleChangeFind}
           />
 
           <button
