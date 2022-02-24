@@ -1,8 +1,5 @@
-import logo from "./logo.svg";
 import React, { useState } from "react";
 import "./App.css";
-import CreateTask from "./Components/CreateTask";
-import TaskContainer from "./Components/TaskContainer";
 import Login from "./Components/Login";
 
 const App = () => {
