@@ -1,0 +1,212 @@
+.App {
+  padding: 25px;
+}
+
+.font-face-titulo {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.font-face-subtitulo {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 25px;
+}
+
+.font-face-body {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 16px;
+}
+
+.font-face-form {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 11px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+input {
+  padding: 8px 8px 8px 8px;
+  margin: 10px;
+}
+
+textarea {
+  padding: 8px 8px 8px 8px;
+  margin: 10px;
+}
+
+button {
+  background-color: #2ec76d;
+  color: #ffffff;
+  padding: 5px;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+.close-button {
+  background-color: #ffffff;
+  padding: 8px 8px 8px 8px;
+}
+
+.modal-button {
+  margin: 0 auto;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.modal-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(126, 125, 125, 0.688);
+}
+
+.modal-card {
+  margin: 0 auto;
+  display: block;
+  margin-top: 250px;
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 0px;
+}
+
+.padding-8px {
+  padding: 8px 8px 8px 0px;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.margin-top {
+  margin-top: 8px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-90 {
+  margin-top: 90px;
+}
+
+.margin-top-110 {
+  margin-top: 50%;
+}
+
+.margin-top-middle {
+  margin-top: 30%;
+}
+
+.margin-bottom {
+  margin-bottom: 5px;
+}
+
+.search-field {
+  padding-left: 35px;
+  background-image: url("./Assets/Icons/search\ 1.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 10px 0.4rem;
+}
+
+.plus-field {
+  padding-left: 35px;
+  background-image: url("./Assets/Icons/plus\ 1.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 10px 0.3rem;
+}
+
+.close-field {
+  background-image: url("./Assets/Icons/x\ 2.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 0px 0.1rem;
+}
+
+#contenedor-card {
+  padding: 30px;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedor > div {
+  width: 150%;
+}
+
+.input-width {
+  width: 85%;
+}
+
+.father {
+  height: 8px;
+}
+
+.son {
+  /* IMPORTANTE */
+  line-height: 8px;
+}
+
+.father-form {
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.son-form {
+  /* IMPORTANTE */
+  width: 120px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+}
+
+.card {
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--quaternary-color);
+  margin: 10px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 6px 10px 5px 0px rgba(228, 227, 228, 0.75);
+}
+
+.card-form {
+  width: 230px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 15px;
+  box-shadow: 6px 10px 5px 0px rgba(228, 227, 228, 0.75);
+}
