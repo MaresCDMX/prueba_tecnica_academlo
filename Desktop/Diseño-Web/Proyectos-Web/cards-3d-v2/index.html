@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <!--==================== SPLITTING JS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Dual Tonal V2</title>
+  </head>
+  <body>
+    <div class="lds-hourglass"></div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Jesús</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-check-alt nav__icon"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-envelope-heart nav__icon"></i> Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!--==================== Theme change button====================-->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="change-language">
+            <span class="en">En</span>
+            <input type="checkbox" class="check" />
+            <span class="es">Es</span>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">SENDA DUOTONAL</h2>
+        <span class="section__subtitle"
+          >Homenaje Gráfico a Eugenio Toussaint</span
+        >
+
+        <div
+          class="portfolio__container container container-card swiper swiper-container"
+        >
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img
+                    src="/SENDA DUOTONAL _ WEB/ANTONIO CASTRO.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="contentCrd">
+                  <h2>Antonio Castro</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img src="/SENDA DUOTONAL _ WEB/ARAM HUERTA.jpg" alt="img" />
+                </div>
+                <div class="contentCrd">
+                  <h2>Aram Huerta</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img
+                    src="/SENDA DUOTONAL _ WEB/CELSO ARRIETA.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="contentCrd">
+                  <h2>Celso Arrieta</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 4====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img
+                    src="/SENDA DUOTONAL _ WEB/CHRISTOPHER SCOTT.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="contentCrd">
+                  <h2>Christopher Scott</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 5====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img src="/SENDA DUOTONAL _ WEB/DONG JIN.jpg" alt="img" />
+                </div>
+                <div class="contentCrd">
+                  <h2>Dong Jin</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 6====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <div class="card test-shine">
+                <div class="imgCrd">
+                  <img
+                    src="/SENDA DUOTONAL _ WEB/EDUARDO DAVIT.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="contentCrd">
+                  <h2>Eduardo Davit</h2>
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/track/6DF1PfCZEDDRTESnUFv7Ig?utm_source=generator"
+                    width="100%"
+                    height="80"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==== Add Arrows =======-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <!--==== Add Pagination =======-->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== Email Js Link ====================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!--==================== Sweet Alert ====================-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("z9uI7NhhakQl2Aptf");
+      })();
+    </script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== SPLITTING JS ====================-->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <!--==================== VanillaTilt ====================-->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+      integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

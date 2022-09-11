@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+    <!--==================== SPLITTING JS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Portafolio Responsive JM</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Jesús</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> Acerca de mí
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-check-alt nav__icon"></i> Habilidades
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-envelope-heart nav__icon"></i> Contáctame
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!--==================== Theme change button====================-->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="change-language">
+            <span class="en">In</span>
+            <input type="checkbox" class="check" checked />
+            <span class="es">Es</span>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/jesus-mares/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/jesusmares82-hub"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=525548056471&text=Hola,%20Necesito%20ayuda%20con%20un%20proyecto"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-whatsapp"></i>
+              </a>
+              <a
+                href="https://m.me/jesusmares82"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-facebook-messenger-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    xlink:href="/assets/img/jesus.png"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">
+                <span class="home__title-text">
+                  <span data-splitting class="home__title-text-1"
+                    >Hola, Yo soy</span
+                  >
+                  <span data-splitting class="home__title-text-2">Jesús</span>
+                </span>
+              </h1>
+              <h3 class="home__subtitle">Soy un desarrollador Fontend</h3>
+              <p class="home__description">
+                con una pasión por crear hermosos sitios web. Actualmente estoy
+                trabajando como autónomo.
+              </p>
+              <a href="#contact" class="button button--flex btn-grad">
+                Contáctame <i class="uil uil-message button__icon"></i>
+              </a>
+              <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                  <i class="uil uil-mouse home__scroll-mouse"></i>
+                  <span class="home__scroll-name">Desplázate hacia abajo</span>
+                  <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">Acerca de Mí</h2>
+        <span class="section__subtitle">Mi introducción</span>
+        <div class="about__container container grid">
+          <img src="/assets/img/me.png" alt="" class="about__img" />
+          <div class="about__container container">
+            <span> <i class="uil uil-music"></i> Codea conmigo...</span>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/2L8Gm7T2aJvRj1ih03UeKv?utm_source=generator"
+              width="100%"
+              height="340"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
+          <div class="about__data">
+            <p class="about__description">
+              Hola, Mi nombre es Jesús Mares 👋. Soy un ingeniero Frontend con
+              sede en Ciudad de México ☀️. Me describo como un apasionado
+              desarrollador que le encanta la codificación, el código abierto y
+              las plataformas web ❤️.. Mi portafolio funciona con VS Code y café
+              ☕ ..
+            </p>
+          </div>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">03+</span>
+              <span class="about__info-name"
+                >Años <br />
+                experiencia</span
+              >
+            </div>
+            <div>
+              <span class="about__info-title">53+</span>
+              <span class="about__info-name"
+                >Repositorios <br />
+                en Github</span
+              >
+            </div>
+          </div>
+          <div class="about__buttons">
+            <a
+              download=""
+              href="/assets/pdf/Jesús-Mares-CV.pdf"
+              class="button button--flex btn-grad"
+            >
+              Descarga CV<i class="uil uil-file-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Habilidades</h2>
+        <span class="section__subtitle">Mi nivel técnico</span>
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Desarrollador Frontend</h1>
+                  <span class="skills__subtitle">Más de 2 años</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS 2====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Desarrollador Backend</h1>
+                  <span class="skills__subtitle">Más de 1 año</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node Js</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__node"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__python"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Express</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__express"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__php"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS 3====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-wordpress-simple skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">
+                    Sistema de gestión de contenidos CMS
+                  </h1>
+                  <span class="skills__subtitle">Más de 1 año</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">WordPress</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__wordpress"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Joomla</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__joomla"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title">Preparación</h2>
+        <span class="section__subtitle">Mi viaje personal</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Educación
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Trabajo
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Ingeniería en Computación
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >CDMX - Universidad Nacional Autónoma de México</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 - 2019
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Web Development Full-Stack
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >CDMX - Academia de Ciencias de la Computación e Informática
+                    - Academlo</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION CONTENT 2====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Asesor de cursos en línea
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >CDMX - Universidad Nacional Autónoma de México -
+                    DGTIC</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2015 - 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Servicios</h2>
+        <span class="section__subtitle">Qué ofrezco</span>
+
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title">Diseñador Web</h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              Ver más
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Diseñador Web</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-desktop services__modal-icon"></i>
+                    <p>Desarrollo de interfaz de usuario</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-window services__modal-icon"></i>
+                    <p>Desarrollo de paginas web</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-arrow-growth services__modal-icon"></i>
+                    <p>Posiciono la marca de tu empresa</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SERVICES 2====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">Desarrollador Frontend</h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              Ver más
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Desarrollador Frontend</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-monitor services__modal-icon"></i>
+                    <p>Diseño web responsivo con HTML y CSS</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-java-script services__modal-icon"></i>
+                    <p>Desarrollador Javascript</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-wordpress services__modal-icon"></i>
+                    <p>Servicios de tematización de CMS</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portafolio</h2>
+        <span class="section__subtitle">Trabajos más recientes</span>
+
+        <div class="portfolio__container container swiper swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio1.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Crud Website</h3>
+                <p class="portfolio__description">
+                  Sitio web donde el usuario puede manipular el inventario de un
+                  auto agencia. El usuario puede ● Ver todos los autos
+                  existentes ● Agregar autos nuevos ● Eliminar autos existentes
+                  ● Actualizar la información de los autos existentes
+                </p>
+                <a
+                  href="https://crud-evaluacion5.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/jesusmares82-hub/Evaluacion5-CRUD"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio2.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Consumo de Api Trivia</h3>
+                <p class="portfolio__description">
+                  Sitio web en el que el usuario puede contestar N número de
+                  preguntas y obtener el resultado de sus respuestas. Con los
+                  siguientes filtros debe estar disponible en el sitio para que
+                  el usuario pueda seleccionar preguntas: ● Número de preguntas
+                  ● Categoría de las preguntas ● Dificultad ● Tipo (opción
+                  múltiple o verdadero y falso)
+                </p>
+                <a
+                  href="https://trivia-project.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/jesusmares82-hub/Trivia"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio3.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Pokedex React App</h3>
+                <p class="portfolio__description">
+                  Aplicación React con Rutas y Contexto
+                </p>
+                <a
+                  href="https://deliverable-pokedex-app.netlify.app/#/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/jesusmares82-hub/deliverable-pokedex-routes"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 4====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio4.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Citas para Twitter</h3>
+                <p class="portfolio__description">
+                  Aplicación en React usando los ganchos State y useState.
+                </p>
+                <a
+                  href="https://quotes-app-react.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/jesusmares82-hub/quotes-react"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 5====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio5.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Rick & Morty API</h3>
+                <p class="portfolio__description">
+                  Aplicación en React que utiliza la API de Rick & Morty:
+                  https://rickandmortyapi.com.
+                </p>
+                <a
+                  href="https://rick-and-morty-mares82.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/MaresCDMX/rick-morty-Api"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 6====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio6.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Sitio Web Logoterapeuta</h3>
+                <p class="portfolio__description">
+                  Aplicación web que utiliza HTML, CSS, JavaScript.
+                </p>
+                <a
+                  href="https://logoterapia.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/MaresCDMX/logoterapeuta"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Código
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--==== Add Arrows =======-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <!--==== Add Pagination =======-->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">Tienes un nuevo proyecto?</h2>
+              <p class="project__description">
+                Contáctame ahora y obtén un 30% de descuento
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contáctame
+                <i class="uil uil-envelope-star project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img src="/assets/img/project1.png" alt="" class="project__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contáctame</h2>
+        <span class="section__subtitle">Ponte en contacto</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Lámame</h3>
+                <span class="contact__subtitle">55 4805 6471</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">jesusmares82@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Locación</h3>
+                <span class="contact__subtitle">México - CDMX Tlalpan</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="form"
+            class="contact_form grid"
+            action="https://formspree.io/f/xgeqwyyg"
+            method="POST"
+          >
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Nombre</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="contact__input"
+                />
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="project" class="contact__label">Proyecto</label>
+              <input
+                id="project"
+                name="project"
+                type="text"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <label for="message" class="contact__label">Mensaje</label>
+              <textarea
+                cols="0"
+                rows="7"
+                id="message"
+                name="message"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <button class="button button--flex" type="submit" value="Send">
+                Enviar Mensaje
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Jesús</h1>
+            <span class="footer__subtitle">Desarrollador Fronted</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Servicios</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portafolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://github.com/jesusmares82-hub"
+              target="_blank"
+              class="footer__social"
+              ><i class="uil uil-github-alt"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jesus-mares/"
+              target="_blank"
+              class="footer__social"
+              ><i class="uil uil-linkedin-alt"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=525548056471&text=Hola,%20Necesito%20ayuda%20con%20un%20proyecto"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a
+              href="https://m.me/jesusmares82"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-facebook-messenger-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy gradient-text">
+          &#169; Jesús Mares. All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== Email Js Link ====================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!--==================== Sweet Alert ====================-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("z9uI7NhhakQl2Aptf");
+      })();
+    </script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== SPLITTING JS ====================-->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <!--==================== VanillaTilt ====================-->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
